@@ -1,12 +1,12 @@
+import { itWorks } from '/src/index';
 import { describe, expect, it } from 'vitest';
 
-describe('Calculate', () => {
-  it('should add 1 + 1', () => {
-    const one = 1;
-    const two = 1;
+describe('It works', () => {
+  it('should return text', () => {
+    const expected = 'It works!';
 
-    const result = one + two;
+    const result = itWorks();
 
-    expect(result).toBe(2);
+    expect(result).toBe(expected);
   });
 });
