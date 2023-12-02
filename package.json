@@ -16,6 +16,7 @@
   "type": "module",
   "scripts": {
     "test": "vitest --mode=test --watch",
+    "test:ci": "vitest --mode=test --coverage --no-watch",
     "format": "npx lint-staged",
     "husky": "husky install"
   },
