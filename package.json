@@ -18,7 +18,8 @@
     "test": "vitest --mode=test --watch",
     "test:ci": "vitest --mode=test --no-watch",
     "format": "npx lint-staged",
-    "husky": "husky install"
+    "husky": "husky install",
+    "setup": "node src/index.mjs --day "
   },
   "devDependencies": {
     "@types/node": "^20.10.2",

@@ -6,5 +6,11 @@
 - Day 02
   - [ ] Part one
   - [ ] Part two
- 
- 
+
+
+Create a new day setup by running
+```bash
+npm run setup -- <day>
+# or
+node src/setup.mjs --day <day>
+```
