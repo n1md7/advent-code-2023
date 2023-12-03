@@ -1,1 +1,1 @@
-export const itWorks = () => 'It works!';
+throw 'Not used 👻';
