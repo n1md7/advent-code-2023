@@ -1,4 +1,4 @@
-import { Counter } from '/src/day-01/Counter';
+import { Counter } from '/src/utils/Counter';
 import { Solution } from '/src/interfaces/solution';
 
 export class PartOne implements Solution<number> {

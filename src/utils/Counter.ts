@@ -16,4 +16,8 @@ export class Counter {
   dec() {
     return --this.count;
   }
+
+  set(value: number) {
+    this.count = value;
+  }
 }
