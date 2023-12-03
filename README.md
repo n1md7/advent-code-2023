@@ -4,7 +4,7 @@
   - [x] Part one
   - [x] Part two
 - Day 02
-  - [ ] Part one
+  - [x] Part one
   - [ ] Part two
 
 

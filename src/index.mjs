@@ -31,7 +31,7 @@ const createFile = (path, content) => {
 }
 
 const unitTestTemplate = (day, part) => `
-import { PartOne } from '/src/day-${day}/part-one';
+import { Part${part === 1? 'One': 'Two'} } from '/src/day-${day}/part-${part === 1? 'one': 'two'}';
 import { expect, it, describe } from 'vitest';
 import { readFileSync } from 'fs';
 import { cwd } from 'node:process';
@@ -40,10 +40,10 @@ const path = cwd() + '/src/day-${day}/input.txt';
 const input = readFileSync(path, 'utf-8');
 const example = \`aa.bb.cc\`;
 
-describe('Day ${day} - Part ${part}', () => {
+describe.skip('Day ${day} - Part ${part}', () => {
   it('should verify example input', () => {
     const payload = example.trim();
-    const partOne = new PartOne(payload);
+    const partOne = new Part${part === 1? 'One': 'Two'}(payload);
 
     const result = partOne.solve();
 
@@ -52,7 +52,7 @@ describe('Day ${day} - Part ${part}', () => {
 
   it('should verify real input', () => {
     const payload = input.trim();
-    const partOne = new PartOne(payload);
+    const partOne = new Part${part === 1? 'One': 'Two'}(payload);
 
     const result = partOne.solve();
 

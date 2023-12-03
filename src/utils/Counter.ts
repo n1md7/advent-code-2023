@@ -17,6 +17,14 @@ export class Counter {
     return --this.count;
   }
 
+  add(value: number) {
+    this.count += value;
+  }
+
+  sub(value: number) {
+    this.count -= value;
+  }
+
   set(value: number) {
     this.count = value;
   }
