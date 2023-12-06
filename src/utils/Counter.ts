@@ -18,11 +18,15 @@ export class Counter {
   }
 
   add(value: number) {
-    this.count += value;
+    return (this.count += value);
   }
 
   sub(value: number) {
-    this.count -= value;
+    return (this.count -= value);
+  }
+
+  pow(value: number) {
+    return (this.count **= value);
   }
 
   set(value: number) {
