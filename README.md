@@ -1,40 +1,21 @@
 ### Advent of Code 2023
 
-- Day 01
-  - [x] Part one
-  - [x] Part two
-- Day 02
-  - [x] Part one
-  - [ ] Part two
-- Day 03
-  - [x] Part one
-  - [ ] Part two
-- Day 04
-  - [x] Part one
-  - [x] Part two
-- Day 05
-  - [ ] Part one
-  - [ ] Part two
-- Day 06
-  - [ ] Part one
-  - [ ] Part two
-- Day 07
-  - [ ] Part one
-  - [ ] Part two
-- Day 08
-  - [ ] Part one
-  - [ ] Part two
-- Day 09
-  - [ ] Part one
-  - [ ] Part two
-- Day 10
-  - [ ] Part one
-  - [ ] Part two
-
-
 Create a new day setup by running
+
 ```bash
 npm run setup -- <day>
 # or
 node src/setup.mjs --day <day>
 ```
+
+#### My progress
+
+|                   Monday                    |                   Tuesday                   |                  Wednesday                  |                  Thursday                   |                   Friday                    |                  Saturday                   |                   Sunday                    |
+|:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|:-------------------------------------------:|
+|                    Empty                    |                    Empty                    |                    Empty                    |                    Empty                    | Day **01**. <br/> Part 01 ✅ <br/> Part 02 ✅ | Day **02**. <br/> Part 01 ✅ <br/> Part 02 ❌ | Day **03**. <br/> Part 01 ✅ <br/> Part 02 ❌ |
+| Day **04**. <br/> Part 01 ✅ <br/> Part 02 ✅ | Day **05**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **06**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **07**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **08**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **09**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **10**. <br/> Part 01 ❌ <br/> Part 02 ❌ |
+| Day **11**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **12**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **13**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **14**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **15**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **16**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **17**. <br/> Part 01 ❌ <br/> Part 02 ❌ |
+| Day **18**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **19**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **20**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **21**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **22**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **23**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **24**. <br/> Part 01 ❌ <br/> Part 02 ❌ |
+| Day **25**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **26**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **27**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **28**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **29**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **30**. <br/> Part 01 ❌ <br/> Part 02 ❌ | Day **31**. <br/> Part 01 ❌ <br/> Part 02 ❌ |
+
+
