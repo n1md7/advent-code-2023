@@ -12,4 +12,8 @@ export class Value<T = unknown> {
   set(value: T) {
     this.value = value;
   }
+
+  valueOf() {
+    return this.value;
+  }
 }
