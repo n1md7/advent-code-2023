@@ -1,11 +1,15 @@
 ### Advent of Code 2023
 
+Install dependencies
+```bash
+nvm use
+npm i
+```
+
 Create a new day setup by running
 
 ```bash
 npm run setup -- <day>
-# or
-node src/setup.mjs --day <day>
 ```
 
 #### My progress
