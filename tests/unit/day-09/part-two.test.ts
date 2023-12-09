@@ -1,4 +1,3 @@
-
 import { PartTwo } from '/src/day-09/part-two';
 import { expect, it, describe } from 'vitest';
 import { readFileSync } from 'fs';
@@ -6,16 +5,20 @@ import { cwd } from 'node:process';
 
 const path = cwd() + '/src/day-09/input.txt';
 const input = readFileSync(path, 'utf-8');
-const example = `aa.bb.cc`;
+const example = `
+0 3 6 9 12 15
+1 3 6 10 15 21
+10 13 16 21 30 45
+`;
 
-describe.skip('Day 09 - Part 2', () => {
+describe('Day 09 - Part 2', () => {
   it('should verify example input', () => {
     const payload = example.trim();
     const partOne = new PartTwo(payload);
 
     const result = partOne.solve();
 
-    expect(result).toBe(0);
+    expect(result).toBe(2);
   });
 
   it('should verify real input', () => {
@@ -24,7 +27,6 @@ describe.skip('Day 09 - Part 2', () => {
 
     const result = partOne.solve();
 
-    expect(result).toBe(100);
+    expect(result).toBe(903);
   });
 });
-

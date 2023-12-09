@@ -21,7 +21,7 @@ describe('Day 09 - Part 1', () => {
     expect(result).toBe(114);
   });
 
-  it.skip('should verify real input', () => {
+  it('should verify real input', () => {
     const payload = input.trim();
     const partOne = new PartOne(payload);
 
