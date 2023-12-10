@@ -25,6 +25,10 @@ export class Counter {
     return (this.count -= value);
   }
 
+  mul(value: number) {
+    return (this.count *= value);
+  }
+
   pow(value: number) {
     return (this.count **= value);
   }
