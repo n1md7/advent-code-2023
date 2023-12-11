@@ -36,4 +36,8 @@ export class Counter {
   set(value: number) {
     this.count = value;
   }
+
+  equals(value: number) {
+    return this.count === value;
+  }
 }

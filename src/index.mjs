@@ -1,12 +1,10 @@
 #!/usr/bin/env node
 
 import {existsSync, mkdirSync, writeFileSync} from 'fs';
-import { argv } from 'node:process';
-import { cwd } from 'node:process';
-import { exit } from 'node:process';
+import {argv, cwd, exit} from 'node:process';
 
 const args = argv.slice(2);
-const params = { day: '' };
+const params = {day: ''};
 
 while (args.length > 0) {
   const key = args.shift();
@@ -27,11 +25,11 @@ const createFolder = (dir) => {
 };
 const createFile = (path, content) => {
   path = cwd() + '/' + path;
-  if(!existsSync(path)) writeFileSync(path, content);
+  if (!existsSync(path)) writeFileSync(path, content);
 }
 
 const unitTestTemplate = (day, part) => `
-import { Part${part === 1? 'One': 'Two'} } from '/src/day-${day}/part-${part === 1? 'one': 'two'}';
+import { Part${part === 1 ? 'One' : 'Two'} } from '/src/day-${day}/part-${part === 1 ? 'one' : 'two'}';
 import { expect, it, describe } from 'vitest';
 import { readFileSync } from 'fs';
 import { cwd } from 'node:process';
@@ -43,7 +41,7 @@ const example = \`aa.bb.cc\`;
 describe.skip('Day ${day} - Part ${part}', () => {
   it('should verify example input', () => {
     const payload = example.trim();
-    const partOne = new Part${part === 1? 'One': 'Two'}(payload);
+    const partOne = new Part${part === 1 ? 'One' : 'Two'}(payload);
 
     const result = partOne.solve();
 
@@ -52,7 +50,7 @@ describe.skip('Day ${day} - Part ${part}', () => {
 
   it('should verify real input', () => {
     const payload = input.trim();
-    const partOne = new Part${part === 1? 'One': 'Two'}(payload);
+    const partOne = new Part${part === 1 ? 'One' : 'Two'}(payload);
 
     const result = partOne.solve();
 
@@ -79,7 +77,7 @@ export class Part${part} implements Solution<number> {
 
 `
 
-try{
+try {
   createFolder(`src/day-${params.day}`);
 
   createFile(`src/day-${params.day}/input.txt`, 'Paste your input here');
