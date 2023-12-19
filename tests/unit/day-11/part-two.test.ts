@@ -1,4 +1,3 @@
-
 import { PartTwo } from '/src/day-11/part-two';
 import { expect, it, describe } from 'vitest';
 import { readFileSync } from 'fs';
@@ -6,7 +5,18 @@ import { cwd } from 'node:process';
 
 const path = cwd() + '/src/day-11/input.txt';
 const input = readFileSync(path, 'utf-8');
-const example = `aa.bb.cc`;
+const example = `
+...#......
+.......#..
+#.........
+..........
+......#...
+.#........
+.........#
+..........
+.......#..
+#...#.....
+`;
 
 describe.skip('Day 11 - Part 2', () => {
   it('should verify example input', () => {
@@ -27,4 +37,3 @@ describe.skip('Day 11 - Part 2', () => {
     expect(result).toBe(100);
   });
 });
-
